@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.img1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://images.unsplash.com/photo-1548393488-ae8f117cbc1c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwc3R1ZHl8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    font-size: 14px;
+}
+.text-box a{
+    
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 8px 40px;   
+    border: 1px solid #fff;
+    margin-top: 10px;
+    background: transparent;
+    transition: .6s;
+}
+.text-box a:hover{
+    background: #f1f111;
+    border: 1px solid #f1f111;
+}
+.admi{
+    background-image: url(https://www.evansville.edu/homepage/images/campus-tour-group.jpg);
+    height: 100vh;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.inner{
+    width: 1170px;
+    margin: auto;
+    
+    /* border: 1px solid red; */
+}
+
+.col{
+    background: #ccc;
+    width: 48%;
+    margin: 1%;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+}
+.col img{
+    width: 100%;
+    height: 50%;
+    
+}
+.clear{
+    clear: both;
+}
+
+
+.Tech{
+    background-image: url(https://scarlettlibrarian.files.wordpress.com/2010/08/professional.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    padding: 30px;
+}
+
+.Faizan{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    background: #141414;
+}
+.text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1 {
+    color: #f6fa0a;
+    margin-top: -900px;
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    background: #f6fa0a;
+    height: 40%;
+    padding: 20px 50px;
+    flex-direction: column;
+}
+footer .social-icons, 
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social-icons li,
+footer .menu li {
+    list-style: none;
+}
+footer .social-icons li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social-icons li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .social-icons li a:hover{
+     opacity: 1;
+}
+
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.60s;
+    transition: 0.5s;
+} 
+footer p{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    opacity: 0.75;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+ 
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave-0.2 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave-0.2 4s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave-0.2 4s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+    
+}
+@keyframes animateWave-02 {
+    0% {background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    
+}
+
+@media only screen and (min-width:200px) and (max-width:567px) {
+
+
+    .inner{
+            width:100%;
+        }
+        
+    }
